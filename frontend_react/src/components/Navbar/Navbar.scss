@@ -18,8 +18,7 @@
     align-items: center;
 
     img {
-        width: 90px;
-        height: 20px;
+        width: 7.5rem;
     }
 
     @media screen and (min-width: 2000px) {        
@@ -85,15 +84,16 @@
     justify-content: center;
     align-items: center;
 
-    background: var(--secondary-color);
+    background: var(--cardbg-color);
 
     svg {
         width: 70%;
         height: 70%;
-        color: var(--white-color);
+        color: var(--secondary-color);
+        background-color: var(--cardbg-color);
     }
 
-    div {
+    div.menu-options {
         position: fixed;
         top:0;
         bottom:0;
@@ -110,7 +110,7 @@
         align-items: flex-end;
 
         background: url("../../assets/bgWhite.png");
-        background-color: var(--white-color);
+        background-color: var(--primary-color);
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -120,6 +120,7 @@
             height: 35px;
             color: var(--secondary-color);
             margin: 0.5rem 1rem;
+            border-radius: 50%;
         }
 
         ul {
@@ -138,11 +139,12 @@
                 margin: 1rem;          
 
                 a {
-                    color: var(--gray-color);
+                    color: var(--text-color);
                     text-decoration: none;
                     font-size: 1rem;
                     text-transform: uppercase;
-                    font-weight: 500;transition: 0.3s ease-in-out;
+                    font-weight: 500;
+                    transition: 0.3s ease-in-out;
 
                     &:hover {
                         color: var(--secondary-color);
@@ -150,10 +152,12 @@
                 }      
             }
         }
+
         @media screen and (min-width: 900px) {
             display: none;
         }
     }
+    
     @media screen and (min-width: 900px) {
         display: none;
     }

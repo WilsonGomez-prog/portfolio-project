@@ -3,13 +3,37 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
   --white-color: #ffffff;
+  --black-color: #030303;
+
+  --light-primary-color: #edf2f8;
+  --light-secondary-color: #313bac;
+  --light-lightGray-color: #e4e4e4;
+  --light-gray-color: #6b7688;
+  --light-brown-color: #46364a;
+  --light-bgIMG: url("./assets/bgIMG.png");
+  --light-badgebg-color: transparent;
+  --light-badge-color: var(--black-color);
+  --light-iconbg-color: var(--white-color);
+  --light-text-color: var(--gray-color);
+  --light-head-text-color: var(--black-color);
+  --light-hoverbg-color: var(--light-secondary-color);
+  --light-cardbg-color: #ffffff;
+
+  --dark-primary-color: #0A2647;
+  --dark-secondary-color: #FFFBEB;
+  --dark-lightGray-color: #495579;
+  --dark-gray-color: #263159;
+  --dark-brown-color: #3C2A21;
+  --dark-bgIMG: url("./assets/dark-bgIMG.png");
+  --dark-badgebg-color: rgba(73, 85, 121, 0.5);
+  --dark-badge-color: var(--white-color);
+  --dark-iconbg-color: var(--dark-gray-color);
+  --dark-text-color: var(--white-color);
+  --dark-head-text-color: #91D8E4;
+  --dark-hoverbg-color: #144272;
+  --dark-cardbg-color: #144272;
+
 }
 
 * {
