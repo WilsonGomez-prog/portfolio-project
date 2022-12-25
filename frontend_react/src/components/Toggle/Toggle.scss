@@ -51,27 +51,27 @@
     
     .slider:before {
         position: absolute;
-        content: "🌞";
+        content: url("../../assets/sun.png");
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         height: 26px;
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: rgb(248, 224, 6);
+        background-color: #2196F3;
         -webkit-transition: .4s;
         transition: .4s;
         border-radius: 50%;
     }
     
     input:checked + .slider {
-        background-color: #2196F3;
+        background-color: var(--gray-color);
     }
     
     input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
+        box-shadow: 0 0 1px var(--gray-color);
     }
     
     input:checked + .slider:before {
@@ -79,11 +79,11 @@
         -ms-transform: translateX(26px);
         transform: translateX(26px);
         background-color: #021a2e;
-        content: "🌚";
+        content: url("../../assets/moon.png");
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
     
     /* Rounded sliders */

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
-import {images } from '../../constants';
+import { images } from '../../constants';
 import './Header.scss';
 
 const scaleVariants= {
@@ -29,7 +29,7 @@ const Header = () => {
       >
         <div className="app__header-badge" >
           <div className="badge-cmp app__flex">
-            <span>👋</span>
+            <span><img src={images.hello} alt='waving hand'/></span>
             <div style={{marginLeft: 20}}>
               <p className='p-text'>Hello, I am</p>
               <h1 className='head-text'>Wilson</h1>

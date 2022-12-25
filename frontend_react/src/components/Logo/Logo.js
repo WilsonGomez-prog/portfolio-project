@@ -4,9 +4,9 @@ import './Logo.scss';
 
 const Logo = () => {
   return (
-    <div class="logo-container">
-        <h2 class="logo">WAGS</h2>
-        <h4 class="name">Wilson Gomez</h4>
+    <div className="logo-container">
+        <h2 className="logo">WAGS</h2>
+        <h4 className="name">Wilson Gomez</h4>
     </div>
   )
 }
