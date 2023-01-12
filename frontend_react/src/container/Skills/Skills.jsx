@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-// import ReactTooltip from 'react-tooltip';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../..//client';
@@ -68,8 +67,6 @@ const Skills = () => {
                         data-for={work.name}
                         key={work.name + " - " + index}
                       >
-                        {/* <h4 className='bold-text'>{work.name}</h4>
-                        <p className='p-text'>{work.company}</p> */}
                         <details>
                             <summary>
                               <div>
@@ -82,15 +79,6 @@ const Skills = () => {
                             </div>
                         </details>
                       </motion.div>
-                      {/* <ReactTooltip
-                        id={work.name}
-                        effect="solid"
-                        arrowColor="#fff"
-                        className='skills-tooltip'
-                        key={work.name + " tooltip " + index}
-                      >
-                        {work.desc}
-                      </ReactTooltip> */}
                     </>
                     ))
                   }
