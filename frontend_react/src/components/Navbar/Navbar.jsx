@@ -42,6 +42,7 @@ const Navbar = () => {
         setCssProperty(rootDocument, '--head-text-color', getCssProperty(rootDocument, `--${mode}-head-text-color`));
         setCssProperty(rootDocument, '--hoverbg-color', getCssProperty(rootDocument, `--${mode}-hoverbg-color`));
         setCssProperty(rootDocument, '--cardbg-color', getCssProperty(rootDocument, `--${mode}-cardbg-color`));
+        setCssProperty(rootDocument, '--shadow-color', getCssProperty(rootDocument, `--${mode}-shadow-color`));
         
     }, [darkMode])
 

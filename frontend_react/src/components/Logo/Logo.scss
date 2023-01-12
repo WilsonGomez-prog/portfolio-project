@@ -1,36 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Nova+Flat&display=swap');
-
-body {
-    font-family: 'Monoton', cursive;
-    background-color: transparent;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 .logo-container {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: transparent;
     width: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        text-decoration: none;
+        &:visited {
+
+        }
+    }
+
+    &:hover {
+        .name {        
+            margin-top: 0.2rem;
+            height: 0.9rem;
+        }
+    }
 }
 
 .logo {    
     margin: 0;
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 2.7rem;
+    font-weight: 900;
     z-index: 0;
-    color: transparent;
-    -webkit-text-stroke: 2.5px #3945c7;
+    color: #3945c7;
+    text-shadow: -3px 2px var(--shadow-color);
 }
 
 
 .name {
-    -webkit-text-stroke: 1px #161515;
-    font-size: 0.8rem;
+    -webkit-text-stroke: 0.2px var(--shadow-color);
+    font-size: 0.85rem;
     color: #3845d6;
-    position: absolute;
+    transition: 0.5s ease;
     font-weight: 800;
     text-transform: uppercase;
-    font-family: 'Nova Flat', cursive;
+    font-family: 'Nova Flat', cursive; 
+    height: 0;
+    overflow: hidden;
 }
 
 .logo {

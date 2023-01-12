@@ -110,14 +110,75 @@
         margin-bottom: 1rem;
         cursor: pointer;
 
-        h4 {
-            font-weight: 500;
+        details {
+            transition: all .9s ease-out;
+            max-height: 4rem;
+            overflow: hidden;
+
+            summary {
+                list-style: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: start;
+
+                &:active {
+                        
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    text-align: start;
+                }
+
+                &::marker {
+                    display: none;
+                }
+
+                h4 {
+                    font-weight: 500;
+                    width: fit-content;
+                }
+        
+                p {
+                    font-weight: 400;
+                    margin: 5px 0;
+                    width: fit-content;
+                }
+            }
+
+            &[open] { 
+                max-height: 50rem;
+
+                .description-container {
+                    height: auto;
+                }
+            }
+
+            .description-container {
+                height: 0;
+                overflow: hidden;
+                padding:  5px 1rem;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(10px);
+                transition: all .9s ease;
+            }
+
+            .work-desc {
+                color: var(--text-color);
+                font-size: 0.9rem;
+                line-height: 1.5 !important;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1rem !important;
+                    max-width: 500px !important;
+                    line-height: 2 !important;
+                }
+            }
         }
 
-        p {
-            font-weight: 400;
-            margin-top: 5px;
-        }
+        
     }
 }
 
